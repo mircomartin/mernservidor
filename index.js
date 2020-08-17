@@ -9,7 +9,7 @@ const app = express();
 conectarDB()
 
 //habilitar cors
-app.use(cors({ credentials: true, origin: true }));
+app.use(cors({ credentials: true, origin: 'https://secret-tundra-72255.herokuapp.com/' }));
 app.options("*", cors());
 
 //habilitar express jason
